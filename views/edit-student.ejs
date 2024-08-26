@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/styles.css">
+<%- include('./partials/header') %>
+
+<div class="student-log-block">
+    <!-- edit button form -->
+    <h1>Edit Student Details</h1>
+    <form action="/editStudent" method="POST">
+        <input type="hidden" name="studentId" value="<%= student.id %>">
+        <label>Name: <input class="form-border" type="text" name="name" value="<%= student.name %>"></label><br>
+        <label>Surname: <input class="form-border" type="text" name="surname" value="<%= student.surname %>"></label><br>
+        <label>Cellphone Number: <input class="form-border" type="text" name="cell_number" value="<%= student.cell_number %>"></label><br>
+        <label>Age: <input class="form-border" type="text" name="age" value="<%= student.age %>"></label><br>
+        <label>Confirmation Year: <input class="form-border" type="text" name="confirmation_year" value="<%= student.confirmation_year %>"></label><br>
+        <label>School: <input class="form-border" type="text" name="school" value="<%= student.school %>"></label><br>
+        <label>Allergies: <input class="form-border" type="text" name="allergies" value="<%= student.allergies %>"></label><br>
+        <label>Birthday: <input class="form-border" type="text" name="birthday" placeholder="mm/dd/yyyy" value="<%= student.birthday %>"></label><br>
+        <label>Parent Name: <input class="form-border" type="text" name="parent_name" value="<%= student.parent_name %>"></label><br>
+        <label>Parent Surname: <input class="form-border" type="text" name="parent_surname" value="<%= student.parent_surname %>"></label><br>
+        <label>Parent Cellphone Number: <input class="form-border" type="text" name="parent_number" value="<%= student.parent_number %>"></label><br>
+        <label>Parent Email: <input class="form-border" type="email" name="parent_email" value="<%= student.parent_email %>"></label><br>
+        <button class="save-btn btn-lg" type="submit">Save</button>
+    </form>  
+</div>
+
+<%- include('./partials/footer') %>

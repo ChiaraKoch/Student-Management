@@ -1,0 +1,20 @@
+<%- include('./partials/header') %>
+
+
+<div class="class-list">
+    <h1 class="class-list-title">
+        <%= title %> <a class="btn btn-light btn-lg logout" href="/logout" role="button">Log Out</a>
+    </h1>
+
+    <div>
+        <% if (student_info && student_info.length > 0) { %>
+            <% student_info.forEach(student => { %>
+                <div class="class-list-students class-list-names">
+                    <span><%= student.name %> <%= student.surname  %>, <%= student.age  %>, <b>Confirmation year:</b> <%= student.confirmation_year  %>, <b>Birthday:</b> <%= student.birthday  %></span>              
+                </div>
+            <% }); %>
+        <% } else { %>
+            <p>No students found.</p>
+        <% } %>
+    </div>
+</div> 

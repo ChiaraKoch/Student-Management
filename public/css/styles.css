@@ -1,0 +1,221 @@
+.body{
+    background-color: rgb(0, 150, 255);
+} 
+
+.header {
+    background-color: rgb(0, 150, 255);
+}
+
+.form-border {
+    border: solid 1px rgb(0, 150, 255);
+    border-radius: 5px;
+}
+
+.form-border:hover {
+    font-size: 30px;
+    border: solid 1px rgb(15, 104, 168);
+}
+
+.form-button {
+    background-color: rgb(0, 150, 255);
+    color: white;
+    border: none;
+}
+
+.form-button:hover {
+    background-color: rgb(7, 134, 224);
+    color: rgba(234, 234, 206, 0.856);
+}
+
+.form-heading {
+    padding-top: 30px;
+    color: white;
+}
+
+.form-button-google {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.form-button-google:hover {
+    background-color: rgba(234, 234, 206, 0.856);
+    border-radius: 5px;
+}
+
+.login, .register {
+    background-color: white;
+    color: rgb(0, 150, 255);
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login:hover, .register:hover {
+    background-color: rgba(255, 255, 220, 0.856);
+    color: rgb(7, 140, 216);
+}
+
+img {
+    width: 400px;
+    height: 350;
+    border-radius: 60%;
+    float: right;
+    shape-outside: ellipse(50% 50%);
+}
+
+nav {
+    background-color: rgb(0, 150, 255);
+    margin-bottom: 0;
+    border-bottom: 2px solid white;
+    padding-top: 20px;
+}
+
+.bar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+    color: rgba(255, 255, 220, 0.856);
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 220, 0.856);
+}
+
+.header-text {
+    color: white;
+}
+
+footer{
+    color: rgb(174, 161, 161);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-left: 700px;
+    margin-top: auto;
+}
+
+
+.student-log-block {
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.logout {
+    margin-left: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout:hover {
+    background-color: rgb(111, 190, 246);
+}
+
+.student-card {
+    padding-top: 20px;
+}
+
+.student {
+    padding-top: 20px;
+    border-top: 2px solid rgb(0, 150, 255);
+}
+
+.class-list {
+    text-align: center;
+}
+
+.class-list-students {
+    padding-top: 10px;
+}
+
+.class-list-title {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.class-list-names:hover {
+    color: rgb(0, 150, 255);
+    font-size: 30px;
+    padding: 10px 10px 10px 10px;
+}
+
+.delete-button, .edit-button {
+    color: white;
+    background-color: rgb(0, 150, 255);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+    display: inline;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.delete-button:hover, .edit-button:hover {
+    color: rgb(0, 150, 255);
+    background-color: rgba(234, 234, 206, 0.856);
+    border-radius: 5px;
+    border: 2px solid rgb(0, 150, 255);
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.edit-button a {
+    text-decoration: none;
+    color: white; /* Change this to your desired text color */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-button a:hover {
+    text-decoration: none;
+    color: rgb(0, 150, 255);;
+}
+
+.edit-form {
+    column-count: 3;
+    column-gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.save-btn {
+    color: white;
+    background-color: rgb(0, 150, 255);
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.save-btn:hover {
+    color: rgb(0, 150, 255);
+    background-color: rgba(234, 234, 206, 0.856);
+    border-radius: 5px;
+    border: 2px solid rgb(0, 150, 255);
+}

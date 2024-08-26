@@ -1,0 +1,54 @@
+<%- include('./partials/header') %>
+
+
+<div class="student-log-block">
+    <h1 >
+        <%= title%><a class="btn btn-light btn-lg logout" href="/logout" role="button">Log Out</a>
+    </h1>
+
+    <div class="student-card">
+        <% if (student_info && student_info.length > 0) { %>
+            <% student_info.forEach(student => { %>
+                <div class="student">
+                    <table class="table my5">
+                        <thead>
+                            <th>Student</th>
+                            <th>Parent</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><%= student.name %> <%= student.surname %></th>
+                                <th><%= student.parent_name %> <%= student.parent_surname %></th>  
+                            </tr>
+                            <tr>
+                                <td>Cellphone Number: <%= student.cell_number %></td>
+                                <td>Cellphone Number: <%= student.parent_number %></td>
+                            </tr>
+                            <tr>
+                                <td>Age: <%= student.age %></td>
+                                <td>Parent Email: <%= student.parent_email %></td>
+                            </tr>
+                            <tr><td>Confirmation year: <%= student.confirmation_year %></td></tr>
+                            <tr><td>School: <%= student.school %></td></tr>
+                            <tr><td>Allergies: <%= student.allergies %></td></tr>
+                            <tr><td>Birthday: <%= student.birthday %></td></tr>
+                        </tbody>
+                    </table>  
+                    <div class="button-container">
+                       <!-- delete button -->
+                        <form action="/deleteStudent" method="POST">
+                            <button class="delete-button btn-lg" name="studentId" value="<%= student.id %>" type="submit">DELETE</button>
+                        </form>
+
+                        <!-- edit button -->
+                        <button class="edit-button btn-lg">
+                            <a href="/edit-student/<%= student.id %>">EDIT</a>
+                        </button>
+                    </div>
+               </div>
+            <% }); %>
+        <% } else { %>
+            <p>No students found.</p>
+        <% } %>
+    </div>
+</div> 
