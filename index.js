@@ -40,8 +40,6 @@ app.use(express.static("public"));
 app.use(passport.initialize());
 app.use(passport.session());
 
-let students = [];
-
 app.get("/", async (req, res) => {
     res.render("home.ejs")
 })
